@@ -9,7 +9,7 @@ class Skill extends Model
 {
     use HasFactory;
 
-    protected $fillage = [
+    protected $fillable = [
         'name',
         'image'
     ];
