@@ -37,6 +37,8 @@
                                 {{ skill.name }}
                             </option>
                         </select>
+                        <InputError class="mt-2" :message="$page.props.errors.skill_id" />
+
                     </div>
                     <div class="mt-2">
                         <InputLabel for="name" value="Name" />
@@ -48,7 +50,7 @@
                             autofocus
                             autocomplete="username"
                         />
-                        <InputError class="mt-2" :message="form.errors.name" />
+                        <InputError class="mt-2" :message="$page.props.errors.name" />
                     </div>
 
                     <div class="mt-2">
@@ -61,7 +63,7 @@
                             autofocus
                             autocomplete="projecturl"
                         />
-                        <InputError class="mt-2" :message="form.errors.name" />
+                        <InputError class="mt-2" :message="$page.props.errors.name" />
                     </div>
 
                     <div class="mt-2">
@@ -72,7 +74,7 @@
                             class="mt-1 block w-full"
                             @input="form.image = $event.target.files[0]"
                         />
-                        <InputError class="mt-2" :message="form.errors.image" />
+                        <InputError class="mt-2" :message="$page.props.errors.image" />
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
