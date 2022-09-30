@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply font-body text-paragph leading-6 bg-gray-200;
+        @apply font-body text-paragraph leading-6 bg-gray-200;
     }
     h1,
     h2,
@@ -13,7 +13,7 @@
     h5,
     h6 {
         @apply text-slate-900 dark:text-white font-primary;
-    },
+    }    
     .section {
         @apply py-12 lg:py-32;
     }
@@ -33,7 +33,7 @@
         @apply h-[48px];
     },
     .input {
-        @apply bg-light-secondary dark:bg-dark-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-lg focus:outline focus:outline-1 foucs:outline-accent;
+        @apply bg-light-secondary dark:bg-dark-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-lg focus:outline focus:outline-1 focus:outline-accent;
     }
     .textarea {
         @apply bg-light-secondary dark:bg-dark-secondary resize-none w-full outline-none p-6 rounded-lg h-[200px] focus:outline focus:outline-1 focus:outline-accent;
