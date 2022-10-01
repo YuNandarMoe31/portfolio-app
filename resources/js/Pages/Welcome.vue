@@ -1,4 +1,6 @@
 <script setup>
+import Contact from '../Components/Contact.vue'
+import Services from '../Components/Services.vue'
 import Portfolio from '../Components/Portfolio.vue'
 import Skills from '../Components/Skills.vue'
 import About from '../Components/About.vue'
@@ -30,9 +32,13 @@ defineProps({
     <Skills :skills="skills" />
     <!-- Portfolio -->
     <Portfolio :skills="skills" :projects="projects" />
-    <main class="min-h-screen">
+    <!-- Service -->
+    <Services />
+    <!-- Contact -->
+    <Contact />
+    <!--<main class="min-h-screen">
         <slot />
 
-    </main>
+    </main>-->
     <Footer />
 </template>

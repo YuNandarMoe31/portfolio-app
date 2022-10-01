@@ -48,7 +48,7 @@
                                 <td class="py-4 px-6">
                                     <img
                                         :src="skill.image"
-                                        class="w-12 h-12 rounded-full"
+                                        class="w-20 h-20"
                                     />
                                 </td>
                                 <td class="py-4 px-6">
