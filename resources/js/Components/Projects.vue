@@ -30,7 +30,7 @@ const filterProjects = (id) => {
                 <li class="cursor-pointer capitalize m-4">
                     <button
                         @click="filterProjects('all')"
-                        class="flex text-center px-4 py-2 text-secondary rounded-md"
+                        class="flex text-center px-4 py-2 text-white rounded-md"
                         :class="[
                             selectedSkill === 'all'
                                 ? 'bg-accent'
@@ -47,7 +47,7 @@ const filterProjects = (id) => {
                 >
                     <button
                         @click="filterProjects(projectSkill.id)"
-                        class="flex text-center px-4 py-2 hover:bg-accent text-secondary rounded-md"
+                        class="flex text-center px-4 py-2 hover:bg-accent text-white rounded-md"
                     >
                         {{ projectSkill.name }}
                     </button>

@@ -5,7 +5,7 @@ const showMobileMenu = ref("false");
 
 <template>
     <nav
-        class="bg-light-primary border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-dark-primary"
+        class="bg-light-primary border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-dark-primary"
     >
         <div
             class="container flex flex-wrap justify-between items-center mx-auto"

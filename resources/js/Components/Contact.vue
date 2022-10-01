@@ -64,7 +64,7 @@ const submit = () => {
                                 >I am here to help you.</P
                             >
                             <p class="text-accent font-normal">
-                                Email me at john@doe.com
+                                Email me at yunandarmoe31@gmail.com
                             </p>
                         </div>
                     </div>
