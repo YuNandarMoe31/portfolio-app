@@ -1,4 +1,5 @@
 <script setup>
+import Portfolio from '../Components/Portfolio.vue'
 import Skills from '../Components/Skills.vue'
 import About from '../Components/About.vue'
 import Promote from '../Components/Promote.vue'
@@ -27,6 +28,8 @@ defineProps({
     <About />
     <!-- Skills -->
     <Skills :skills="skills" />
+    <!-- Portfolio -->
+    <Portfolio :skills="skills" :projects="projects" />
     <main class="min-h-screen">
         <slot />
 
