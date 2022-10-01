@@ -1,5 +1,5 @@
 <script setup>
-import Frontend from "@/Layouts/Frontend.vue";
+//import Frontend from '../Layouts/Frontend.vue'
 import { Head, Link } from "@inertiajs/inertia-vue3";
 import { ref } from "vue";
 const showMobileMenu = ref("false");
@@ -7,7 +7,6 @@ const showMobileMenu = ref("false");
 
 <template>
     <Head title="Welcome to Portfolio" />
-
     <!--<Frontend />-->
     <nav
         class="bg-light-primary border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-dark-primary"
@@ -49,11 +48,13 @@ const showMobileMenu = ref("false");
                     ></path>
                 </svg>
             </button>
-            <div class="w-full md:block md:w-auto" 
-                :class="{ hidden : showMobileMenu }"
-                id="navbar-default">
+            <div
+                class="w-full md:block md:w-auto"
+                :class="{ hidden: showMobileMenu }"
+                id="navbar-default"
+            >
                 <ul
-                    class="flex flex-col p-4 mt-4 rounded-lg border border-light-tail-500 dark:border-dark-navy-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  dark:bg-dark-secondary md:dark:bg-gray-900"
+                    class="flex flex-col p-4 mt-4 rounded-lg border border-light-tail-500 dark:border-dark-navy-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-dark-secondary md:dark:bg-gray-900"
                 >
                     <li>
                         <a
@@ -95,4 +96,38 @@ const showMobileMenu = ref("false");
             </div>
         </div>
     </nav>
+    <!--- Hero -->
+
+    <!--- Promote -->
+
+    <!--- About -->
+
+    <!--- Skills -->
+
+    <!--- Portfolio -->
+
+    <!--- Services -->
+    
+    <!--- Contact -->
+    <main class="min-h-screen">
+        <slot />
+    </main>
+    <footer class="bg-light-secondary dark:bg-dark-secondary py-12">
+        <div class="container mx-auto">
+            <div
+                class="flex flex-col md:flex-row space-y-6 lg:space-y-0 items-center justify-between"
+            >
+                <div>
+                    <img
+                        src="https://flowbite.com/docs/images/logo.svg"
+                        class="mr-3 h-6 sm:h-9"
+                        alt="Flowbite Logo"
+                    />
+                </div>
+                <p class="text-paragraph opacity-80 text-[15px]">
+                    &copy; 2022 Laraveller.com All Right Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 </template>
