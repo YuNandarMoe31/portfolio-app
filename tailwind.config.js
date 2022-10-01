@@ -32,7 +32,7 @@ module.exports = {
                 "dark-navy-100": "#07567D",
                 "dark-navy-500": "#292D42",
                 accent: {
-                    DEFAULT: "ac6b34",
+                    DEFAULT: "#ac6b34",
                     hover: "#925a2b",
                 },
                 paragraph: "#878e99",
